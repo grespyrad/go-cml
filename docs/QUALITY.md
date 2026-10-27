@@ -84,7 +84,7 @@ x/tools 0.29.0 падает при анализе некоторых конст�
 явно фиксирует x/tools 0.50.0 и соответствующий module graph. Проверено на полном
 сервисе и библиотеке. Версия scanner не заменяется непроверенным @master.
 
-## Специфика CMLGo
+## Специфика go-cml
 
 Сохранён полный lint profile эталона. Локальные `nolint` complexity относятся
 к интерпретации pinned grammar и отдельным многоветвевым semantic constraints;
@@ -99,7 +99,7 @@ Generated model structs имеют optional поля: их отсутствие 
 OpenSpec 1.14.0 `npm audit` сообщает dev-only advisory GHSA-vfj7-8cjw-p6xm в braces
 и три зависимых предупреждения. Исправленный braces-релиз не указан в audit;
 автоматический downgrade OpenSpec до 0.17.2 не применяется. Это tooling dependency,
-она не входит в runtime CMLGo и собранный Go-бинарник. Не передавайте этому
+она не входит в runtime go-cml и собранный Go-бинарник. Не передавайте этому
 закреплённому OpenSpec CLI недоверенные glob patterns. Отчёт audit можно воспроизвести
 командой `npm audit --json`; обновление tooling требует отдельной проверки.
 

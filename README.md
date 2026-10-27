@@ -1,4 +1,4 @@
-# CMLGo
+# go-cml
 
 Go-библиотека для Context Mapper Language 6.12.0: parser, типизированные
 Go-объекты, сериализация исходного CML и семантическая валидация. Runtime использует
@@ -26,7 +26,7 @@ if err != nil {
 // Используйте encoded как CML с canonical keywords.
 ```
 
-Импорт: `cml "github.com/grespyrad/CMLGo"`. Полные выполняемые примеры API:
+Импорт: `"github.com/grespyrad/go-cml"`. Полные выполняемые примеры API:
 [example_test.go](example_test.go). [Парные CML примеры](examples/README.md)
 демонстрируют новые инварианты во всех четырёх областях, Unicode names
 и русские aliases на модели условного ExternalService.
@@ -72,7 +72,7 @@ Go 1.27.1; Task 3.54.0, golangci-lint 2.14.0, govulncheck 1.1.4 и OpenSpec 1.14
 полный lint profile, race/shuffle, module graph, vulnerability scan, architecture,
 negative policy probes и OpenSpec. Сравнение Go/Rust/C++ находится в cml-lint.
 
-Установка: `go get github.com/grespyrad/CMLGo@v0.2.3`.
+Установка: `go get github.com/grespyrad/go-cml@v0.3.0`.
 Локальный `replace` не используется.
 
 Проект основан на Apache-2.0 исходниках [Context Mapper](https://github.com/ContextMapper/context-mapper-dsl).
@@ -85,4 +85,4 @@ Attribution и pinned commits: [NOTICE](NOTICE). Это независимая �
 [Модель эталонного Go-сервиса](examples/README.md#модель-эталонного-go-сервиса):
 контексты, агрегаты, repositories, состояния, операции и application flows;
 варианты с исходными и обобщёнными именами. Выбранные правила проверяются
-нейтральной Go-реализацией в CMLGo examples/reference.
+нейтральной Go-реализацией в go-cml examples/reference.

@@ -1,4 +1,4 @@
-package cmlgo
+package cml
 
 import (
 	"fmt"
@@ -107,7 +107,7 @@ func MarshalWithDialect(model *ContextMappingModel, dialect Dialect) ([]byte, er
 
 	if dialect.Original {
 		if !ParseWithDialect("serialized.cml", source, dialect).Valid {
-			return nil, fmt.Errorf("model uses CMLGo extensions: %w", ErrInvalidModel)
+			return nil, fmt.Errorf("model uses go-cml extensions: %w", ErrInvalidModel)
 		}
 
 		return source, nil

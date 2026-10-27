@@ -1,9 +1,9 @@
-package cmlgo_test
+package cml_test
 
 import (
 	"fmt"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 // ExampleValidate показывает проверку декларативного инварианта.

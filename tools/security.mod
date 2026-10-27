@@ -1,4 +1,4 @@
-module github.com/grespyrad/CMLGo/tools/security
+module github.com/grespyrad/go-cml/tools/security
 
 go 1.27.1
 

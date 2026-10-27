@@ -1,4 +1,4 @@
-package cmlgo
+package cml
 
 const (
 	maxUnorderedMembers = 64

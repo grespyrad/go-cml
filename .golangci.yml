@@ -127,7 +127,7 @@ linters:
       allow-empty: true
       ignore-patterns:
         # В публичных CML structs пропущенное поле означает отсутствие optional grammar assignment.
-        - '^github\.com/grespyrad/CMLGo\.(ContextMappingModel|BoundedContext|Aggregate|SimpleDomainObject|Entity)$'
+        - '^github\.com/grespyrad/go-cml\.(ContextMappingModel|BoundedContext|Aggregate|SimpleDomainObject|Entity)$'
         - '^.*/generated/.*' # Generated protobuf messages define optional fields.
         - '^net/http\.Server$' # stdlib предлагает конфиг с безопасными нулевыми значениями.
         - '^crypto/tls\.Config$' # Проверки TLS выполняет gosec.

@@ -1,4 +1,4 @@
-package cmlgo_test
+package cml_test
 
 import (
 	"bytes"
@@ -7,10 +7,10 @@ import (
 	"os"
 	"testing"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
-// TestTypedCorpusRoundTrip проверяет контракт CMLGo.
+// TestTypedCorpusRoundTrip проверяет контракт go-cml.
 func TestTypedCorpusRoundTrip(t *testing.T) {
 	t.Parallel()
 
@@ -42,7 +42,7 @@ func TestTypedCorpusRoundTrip(t *testing.T) {
 	}
 }
 
-// TestTokenizePreservesUnicodeAndComments проверяет контракт CMLGo.
+// TestTokenizePreservesUnicodeAndComments проверяет контракт go-cml.
 //
 //nolint:gosmopolitan // Unicode контракт требует Han и emoji в fixture.
 func TestTokenizePreservesUnicodeAndComments(t *testing.T) {

@@ -4,7 +4,7 @@ import (
 	"errors"
 	"testing"
 
-	"github.com/grespyrad/CMLGo/examples/reference"
+	"github.com/grespyrad/go-cml/examples/reference"
 )
 
 // TestReservationGuard проверяет ошибочные переходы и сохранение состояния при отказе.

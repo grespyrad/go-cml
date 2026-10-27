@@ -1,13 +1,13 @@
-package cmlgo_test
+package cml_test
 
 import (
 	"strings"
 	"testing"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
-// TestPlantUMLReference проверяет контракт CMLGo.
+// TestPlantUMLReference проверяет контракт go-cml.
 func TestPlantUMLReference(t *testing.T) {
 	t.Parallel()
 
@@ -39,7 +39,7 @@ func TestPlantUMLReference(t *testing.T) {
 	}
 }
 
-// TestPlantUMLRejectsInvalid проверяет контракт CMLGo.
+// TestPlantUMLRejectsInvalid проверяет контракт go-cml.
 func TestPlantUMLRejectsInvalid(t *testing.T) {
 	t.Parallel()
 

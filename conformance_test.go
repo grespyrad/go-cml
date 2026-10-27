@@ -1,4 +1,4 @@
-package cmlgo_test
+package cml_test
 
 import (
 	"encoding/json"
@@ -6,7 +6,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 // TestOfficialConformance проверяет решения полного Xtext validator 6.12.0.

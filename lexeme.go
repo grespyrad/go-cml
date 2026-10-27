@@ -1,4 +1,4 @@
-package cmlgo
+package cml
 
 import "fmt"
 
