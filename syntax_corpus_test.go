@@ -1,4 +1,4 @@
-package cmlgo_test
+package cml_test
 
 import (
 	"io/fs"
@@ -6,7 +6,7 @@ import (
 	"strings"
 	"testing"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 // TestRecognizerParity проверяет одинаковые решения parser и compact recognizer.

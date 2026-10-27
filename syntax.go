@@ -1,4 +1,4 @@
-package cmlgo
+package cml
 
 // recognizer shares grammar and lexer with Parse but does not allocate ASTs.
 type syntaxMatch struct {

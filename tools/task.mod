@@ -1,4 +1,4 @@
-module github.com/grespyrad/CMLGo/tools/task
+module github.com/grespyrad/go-cml/tools/task
 
 go 1.27.1
 

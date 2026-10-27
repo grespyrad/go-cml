@@ -1,5 +1,5 @@
 //nolint:cyclop // Последовательный round-trip и negative scenarios проверяют независимые ошибки.
-package cmlgo_test
+package cml_test
 
 import (
 	"bytes"
@@ -7,7 +7,7 @@ import (
 	"strings"
 	"testing"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 //nolint:gosmopolitan // Fixture включает CJK для проверки Unicode rule.

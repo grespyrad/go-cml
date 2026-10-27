@@ -1,4 +1,4 @@
-package cmlgo
+package cml
 
 // Position is a one-based Unicode line/column and a zero-based byte offset.
 type Position struct {

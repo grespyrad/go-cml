@@ -1,9 +1,9 @@
-package cmlgo_test
+package cml_test
 
 import (
 	"testing"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 // TestEscapedDatatypeRoundTrip сохраняет escaped сегменты JavaIdentifier.

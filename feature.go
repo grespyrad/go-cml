@@ -1,4 +1,4 @@
-package cmlgo
+package cml
 
 //nolint:cyclop,gocyclo // Lookahead отличает comma attribute list от следующего Feature.
 func featureAttributeBoundary(e *expression, tokens []token, m match) bool {

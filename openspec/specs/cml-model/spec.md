@@ -2,13 +2,13 @@
 
 ## Purpose
 
-Независимая библиотека CMLGo предоставляет типизированные Go-модели и кодек
+Независимая библиотека go-cml предоставляет типизированные Go-модели и кодек
 исходного CML 6.12.0. CLI находится в отдельном репозитории cml-lint.
 
 ## Requirements
 
 ### Requirement: Типизированные сущности
-CMLGo SHALL предоставлять Go structs для всех объектных правил pinned грамматики,
+go-cml SHALL предоставлять Go structs для всех объектных правил pinned грамматики,
 string enums для перечислений и типизированные Ref для cross references.
 ContextMappingModel, BoundedContext, Aggregate, Entity, ValueObject и другие
 объекты MUST быть доступны без обращения к map полям универсального AST.
@@ -38,5 +38,15 @@ Parse/Unmarshal SHALL работать в памяти; только явно в
 SHALL читать импортируемые файлы. Root package MUST иметь external tests.
 
 #### Scenario: Импорт клиентом
-- **WHEN** cml-lint импортирует github.com/grespyrad/CMLGo v0.2.3
+- **WHEN** cml-lint импортирует github.com/grespyrad/go-cml v0.3.0
 - **THEN** анализатор SHALL работать без копии grammar/parser в своём репозитории.
+
+### Requirement: Каноническое имя модуля и пакета
+Библиотека SHALL публиковаться как github.com/grespyrad/go-cml v0.3.0.
+Корневой Go-пакет MUST называться cml; внешние клиенты SHALL вызывать
+cml.Validate, cml.Unmarshal и остальные API без import alias.
+Генераторы MUST сохранять имя cml при повторном запуске.
+
+#### Scenario: Импорт без алиаса
+- **WHEN** внешний клиент импортирует "github.com/grespyrad/go-cml"
+- **THEN** существующий публичный API SHALL быть доступен через cml.

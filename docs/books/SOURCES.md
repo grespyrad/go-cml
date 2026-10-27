@@ -5,7 +5,7 @@
 ISBN 978-5-9775-1886-4. Авторизованный перевод Learning Domain-Driven Design.
 [Официальный ознакомительный PDF издателя](https://bhv.ru/wp-content/uploads/wpallimport/files/pdfki/view_2936_978-5-9775-1886-4.pdf).
 
-| Canonical | Термин книги | Ключ CMLGo | Печатная страница |
+| Canonical | Термин книги | Ключ go-cml | Печатная страница |
 |---|---|---|---:|
 | Domain | предметная область | ПредметнаяОбласть | 33 |
 | Subdomain | поддомен | Поддомен | 34 |

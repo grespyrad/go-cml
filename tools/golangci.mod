@@ -1,4 +1,4 @@
-module github.com/grespyrad/CMLGo/tools/golangci
+module github.com/grespyrad/go-cml/tools/golangci
 
 go 1.27.1
 

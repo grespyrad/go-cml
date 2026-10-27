@@ -1,5 +1,5 @@
 {
-  "name": "cmlgo-specs",
+  "name": "go-cml-specs",
   "private": true,
   "scripts": {
     "specs:check": "openspec validate --all --strict"

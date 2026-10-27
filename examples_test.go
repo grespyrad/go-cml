@@ -1,11 +1,11 @@
-package cmlgo_test
+package cml_test
 
 import (
 	"os"
 	"strings"
 	"testing"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
 // TestPublishedExamples проверяет модели из руководства как внешний потребитель API.

@@ -1,5 +1,11 @@
 # Изменения
 
+## 0.3.0
+
+- Репозиторий и модуль переименованы в `github.com/grespyrad/go-cml`.
+- Корневой пакет называется `cml`: публичный API доступен без import alias.
+- Обновлены генераторы, примеры, ссылки и архитектурные проверки.
+
 ## 0.2.3
 
 - Parser, typed Go models, CML codec и semantic validation для CML 6.12.0.

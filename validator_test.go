@@ -1,14 +1,14 @@
 //nolint:cyclop // Средняя сложность corpus и negative scenarios отражает независимые проверки контрактов.
-package cmlgo_test
+package cml_test
 
 import (
 	"os"
 	"testing"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
-// TestReferenceModels проверяет контракт CMLGo.
+// TestReferenceModels проверяет контракт go-cml.
 func TestReferenceModels(t *testing.T) {
 	t.Parallel()
 
@@ -24,7 +24,7 @@ func TestReferenceModels(t *testing.T) {
 	}
 }
 
-// TestValidationContract проверяет контракт CMLGo.
+// TestValidationContract проверяет контракт go-cml.
 //
 //nolint:gosmopolitan // Unicode контракт требует Han и emoji в fixture.
 func TestValidationContract(t *testing.T) {
@@ -80,7 +80,7 @@ func TestValidationContract(t *testing.T) {
 	}
 }
 
-// TestImports проверяет контракт CMLGo.
+// TestImports проверяет контракт go-cml.
 func TestImports(t *testing.T) {
 	t.Parallel()
 
@@ -108,7 +108,7 @@ func TestImports(t *testing.T) {
 	}
 }
 
-// FuzzParse проверяет контракт CMLGo.
+// FuzzParse проверяет контракт go-cml.
 //
 //nolint:gosmopolitan // Unicode контракт требует Han и emoji в fixture.
 func FuzzParse(f *testing.F) {
@@ -121,7 +121,7 @@ func FuzzParse(f *testing.F) {
 	})
 }
 
-// BenchmarkValidateServiceIntegration проверяет контракт CMLGo.
+// BenchmarkValidateServiceIntegration проверяет контракт go-cml.
 func BenchmarkValidateServiceIntegration(b *testing.B) {
 	data, err := os.ReadFile("testdata/reference/service.cml")
 	if err != nil {

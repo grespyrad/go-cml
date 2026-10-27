@@ -1,4 +1,4 @@
-# Покрытие DDD в CMLGo
+# Покрытие DDD в go-cml
 
 CML 6.12.0 описывает стратегическую модель: domains/subdomains, bounded contexts,
 context map и отношения, ownership, use cases/user stories. Тактическая часть
@@ -13,7 +13,7 @@ flows и coordination задают связи между командами, с�
 attribute constraints — ограничения полей; `validate` STRING — настройка
 Sculptor, не именованный инвариант агрегата с traceability.
 
-## Добавленное расширение CMLGo
+## Добавленное расширение go-cml
 
 ```cml
 BoundedContext ServiceIntegration {

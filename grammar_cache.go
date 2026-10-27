@@ -1,4 +1,4 @@
-package cmlgo
+package cml
 
 import (
 	"cmp"
@@ -7,7 +7,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/grespyrad/CMLGo/internal/grammar"
+	"github.com/grespyrad/go-cml/internal/grammar"
 )
 
 //nolint:gochecknoglobals // sync.Once публикует неизменяемый grammar cache.

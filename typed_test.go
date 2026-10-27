@@ -1,13 +1,13 @@
-package cmlgo_test
+package cml_test
 
 import (
 	"os"
 	"testing"
 
-	cml "github.com/grespyrad/CMLGo"
+	"github.com/grespyrad/go-cml"
 )
 
-// TestTypedModel проверяет контракт CMLGo.
+// TestTypedModel проверяет контракт go-cml.
 func TestTypedModel(t *testing.T) {
 	t.Parallel()
 
@@ -46,7 +46,7 @@ func TestTypedModel(t *testing.T) {
 	}
 }
 
-// TestCreateTypedModel проверяет контракт CMLGo.
+// TestCreateTypedModel проверяет контракт go-cml.
 //
 //nolint:gosmopolitan // Unicode контракт требует Han и emoji в fixture.
 func TestCreateTypedModel(t *testing.T) {
